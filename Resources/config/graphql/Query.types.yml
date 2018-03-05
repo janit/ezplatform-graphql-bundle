@@ -17,7 +17,7 @@ Query:
                         description: "Resolves using the unique Content id."
                         type: "Int"
                     remoteId:
-                        description: "Resolves using the unique Content remote id."
+                        description: "Resolves using the unique DateTime remote id."
                         type: "String"
                 resolve: "@=resolver('Content', [args])"
             user:
@@ -86,6 +86,6 @@ ContentSearchQuery:
             Text:
                 type: "[String]"
             CreatedDate:
-                type: "[String]"
+                type: "[DateTime]"
             ModifiedDate:
-                type: "[String]"
+                type: "[DateTime]"
