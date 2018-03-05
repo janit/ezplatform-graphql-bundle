@@ -330,3 +330,10 @@ TextBlockFieldValue:
                 type: "String"
                 description: "String representation of the value"
                 resolve: "@=value"
+
+DateTime:
+    type: custom-scalar
+    config:
+        serialize: ["BD\\EzPlatformGraphQLBundle", "serialize"]
+        parseValue: ["BD\\EzPlatformGraphQLBundle", "parseValue"]
+        parseLiteral: ["BD\\EzPlatformGraphQLBundle", "parseLiteral"]

@@ -60,7 +60,7 @@ Content:
                 description: "The owner user of the Content object"
                 resolve: "@=resolver('UserById', [value.ownerId])"
             modificationDate:
-                type: "String"
+                type: "DateTime"
                 description: "Date the Content item was last modified on."
             publishedDate:
                 type: "String"
