@@ -334,6 +334,6 @@ TextBlockFieldValue:
 DateTime:
     type: custom-scalar
     config:
-        serialize: ["BD\\EzPlatformGraphQLBundle", "serialize"]
-        parseValue: ["BD\\EzPlatformGraphQLBundle", "parseValue"]
-        parseLiteral: ["BD\\EzPlatformGraphQLBundle", "parseLiteral"]
+        serialize: ["BD\\EzPlatformGraphQLBundle\\GraphQL\\Type\\DateTimeType", "serialize"]
+        parseValue: ["BD\\EzPlatformGraphQLBundle\\GraphQL\\Type\\DateTimeType", "parseValue"]
+        parseLiteral: ["BD\\EzPlatformGraphQLBundle\\GraphQL\\Type\\DateTimeType", "parseLiteral"]
