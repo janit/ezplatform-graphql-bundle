@@ -86,6 +86,6 @@ ContentSearchQuery:
             Text:
                 type: "[String]"
             CreatedDate:
-                type: "[DateTime]"
+                type: "[String]"
             ModifiedDate:
-                type: "[DateTime]"
+                type: "[String]"
