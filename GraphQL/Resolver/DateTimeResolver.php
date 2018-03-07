@@ -13,10 +13,10 @@ class DateTimeResolver
 {
     public function resolvePublishedDateTime(ContentInfo $object)
     {
-        return $object->modificationDate->getTimestamp();
+        return $object->publishedDate->getTimestamp();
     }
     public function resolveModifiedDateTime(ContentInfo $object)
     {
-        return $object->publishedDate->getTimestamp();
+        return $object->modificationDate->getTimestamp();
     }
 }
