@@ -20,8 +20,10 @@ Version:
                         type: "String"
             modificationDate:
                 type: "String"
+                resolve: "@=resolver('ModifiedDateTimeResolver', [value])"
             creationDate:
                 type: "String"
+                resolve: "@=resolver('CreatedDateTimeResolver', [value])"
             creatorId:
                 type: "Int"
             #creator:

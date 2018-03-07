@@ -33,9 +33,11 @@ ContentType:
             creationDate:
                 type: "String"
                 description: "The date of the creation of this Content Type."
+                resolve: "@=resolver('PublishedDateTimeResolver', [value])"
             modificationDate:
                 type: "String"
                 description: "the date of the last modification of this Content Type."
+                resolve: "@=resolver('ModifiedDateTimeResolver', [value])"
             creatorId:
                 type: "Int"
                 description: "The user id of the creator of this Content Type."
@@ -90,8 +92,10 @@ ContentTypeGroup:
                 type: "String"
             creationDate:
                 type: "String"
+                resolve: "@=resolver('PublishedDateTimeResolver', [value])"
             modificationDate:
                 type: "String"
+                resolve: "@=resolver('ModifiedDateTimeResolver', [value])"
             creatorId:
                 type: "Int"
             creator:

@@ -62,9 +62,11 @@ Content:
             modificationDate:
                 type: "String"
                 description: "Date the Content item was last modified on."
+                resolve: "@=resolver('ModifiedDateTimeResolver', [value])"
             publishedDate:
                 type: "String"
                 description: "Date the Content item was first published on."
+                resolve: "@=resolver('PublishedDateTimeResolver', [value])"
             alwaysAvailable:
                 type: "Boolean"
                 description: "Indicates if the Content object is shown in the mainlanguage if its not present in an other requested language."

@@ -48,7 +48,7 @@ class ContentResolver
         'ezgmaplocation' => 'MapLocationFieldValue',
         'ezimage' => 'ImageFieldValue',
         'ezrichtext' => 'RichTextFieldValue',
-        'ezstring' => 'TextLineFieldValue',
+        'ezstring' => 'TextLineFieldValue'
     ];
 
     public function __construct(ContentService $contentService, SearchService $searchService, ContentTypeService $contentTypeService, TypeResolver $typeResolver)

@@ -102,3 +102,13 @@ services:
         tags:
             - { name: "overblog_graphql.mutation", alias: "CreateSection", method: "createSection" }
             - { name: "overblog_graphql.mutation", alias: "DeleteSection", method: "deleteSection" }
+
+    bd_ezplatform_graphql.graph.resolver.published_date:
+        class: BD\EzPlatformGraphQLBundle\GraphQL\Resolver\DateTimeResolver
+        tags:
+            - { name: overblog_graphql.resolver, alias: "PublishedDateTimeResolver", method: "resolvePublishedDateTime" }
+
+    bd_ezplatform_graphql.graph.resolver.modified_date:
+        class: BD\EzPlatformGraphQLBundle\GraphQL\Resolver\DateTimeResolver
+        tags:
+            - { name: overblog_graphql.resolver, alias: "ModifiedDateTimeResolver", method: "resolveModifiedDateTime" }
