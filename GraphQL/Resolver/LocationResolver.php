@@ -50,7 +50,7 @@ class LocationResolver
     {
         if (isset($args['id'])) {
             return $this->locationService->loadLocationChildren(
-                $this->locationService->loadLocation($args['id']),0,100
+                $this->locationService->loadLocation($args['id']),0,1000
             )->locations;
         }
     }
